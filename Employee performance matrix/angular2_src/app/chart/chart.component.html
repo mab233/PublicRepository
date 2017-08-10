@@ -1,0 +1,29 @@
+<div class="container bootstrap snippet">
+  <div class="row chart-page">
+    <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+
+        <h1 class="red-text text-center">Analysis Dashboard</h1>
+        <chart [options]="options"></chart>
+        <chart [options]="pieChartOptions"></chart>
+        <chart [options]="pieChartOptions2"></chart>
+        <chart [options]="columnChartOptions"></chart>
+        <chart [options]="stalked_loc"></chart>
+        <chart [options]="stalked_role"></chart>
+        <chart [options]="performChartOptions"></chart> 
+        <input type="button" class="btn btn-info btn-lg" value="Employee Analysis" (click)="retrieveResponses()" />
+        <input type="button" class="btn btn-info btn-lg" value="Category Based Analysis" (click)="categoryResponses()" />
+        <input type="button" class="btn btn-info btn-lg" value="Location Based Analysis" (click)="locationResponses()" />
+        <input type="button" class="btn btn-info btn-lg" value="Role Based Analysis" (click)="roleResponses()" />\
+        <input type="button" class="btn btn-info btn-lg" value="Performance Based Analysis" (click)="performResponses()"/> 
+        
+        
+        <!--<form align="right" name="form1" method="post">
+            <label class="logoutLblPos">
+                <input type="button" class="btn btn-info btn-lg" value="Logout" (click)="logout()" />
+            </label>
+        </form>-->
+
+    </div>
+  </div>
+</div>
+

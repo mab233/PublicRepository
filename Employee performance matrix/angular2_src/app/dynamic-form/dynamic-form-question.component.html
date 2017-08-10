@@ -1,0 +1,21 @@
+<div [formGroup]="form">
+  <label [attr.for]="question.key">{{question.label}}</label><br><br>
+
+  <div [ngSwitch]="question.controlType">
+
+    <input *ngSwitchCase="'textbox'" [formControlName]="question.quesId"
+            [id]="question.quesId" [type]="question.type">
+
+    <!-- new addition -->
+    <div *ngSwitchCase="'radio'">
+       <div *ngFor="let opt of question.options; let i = index">      
+            <input [id]="question.quesId" [formControlName]="question.quesId" type="radio" [value]="{catId: question.catId,quesId:question.quesId,opt:opt.key}">
+            {{opt.value}}
+       </div>
+    </div>
+    
+
+  </div> 
+
+  <div class="errorMessage" *ngIf="!isValid">{{question.label}} is required</div>
+</div>

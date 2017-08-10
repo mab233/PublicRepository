@@ -1,0 +1,43 @@
+<head>
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+
+<div>
+
+ <!--  <form (ngSubmit)="onSubmit()" [formGroup]="form"> -->
+   <form [formGroup]="form">
+     <!--<div *ngIf="IfManager()" then #getAll else #LtdQues>-->
+       <div *ngFor="let question of questions" class="form-row"><br>
+         <df-question [question]="question" [form]="form"></df-question><br>
+       </div>
+
+
+
+     <div class="col-sm-12" style="padding: 0">
+            <div class="col-sm-6" style="margin:0; padding:0">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment" ></textarea>
+            </div>
+            <div class="col-sm-6">
+            </div>
+
+     </div>
+
+      <div>
+        <input type="button"
+               id="surveyButton"
+               class="btn btn-info btn-lg"
+               value="Submit"
+               (click)="surveySubmit()"
+               style="margin-top: 2%"/>
+      </div>
+
+  </form>
+
+</div>
+

@@ -1,0 +1,28 @@
+body {
+      height: 100%;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .input-lg {
+      height: 46px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33333;
+      border-radius:0px;
+    }
+
+    .btn-info {
+      border-radius: 50px;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8)inset;
+      background: 0 0;
+      border-color: transparent;
+      padding: 10px 10px;
+      display: inline-block;
+      color:black;
+      background-color: azure;
+      font-size: 20px;
+    }
+
+
+

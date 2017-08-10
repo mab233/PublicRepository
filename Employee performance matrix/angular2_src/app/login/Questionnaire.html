@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title> Questionnaire</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body bgcolor= "#80bfff">
+    <h2>Please fill out the following questionnaire and let us know how important are the features mentioned below:</h2>
+    <h4>Answers are from 1-5 with 1 being most important and 5 being the least</h4>
+    <form action = "index.php" name="my form" method="POST">
+        1) Certification: <br>
+        <input type="radio" name="certification" value="1"> 1 &nbsp &nbsp
+        <input type="radio" name="certification" value="2"> 2 &nbsp &nbsp
+        <input type="radio" name="certification" value="3"> 3 &nbsp &nbsp
+        <input type="radio" name="certification" value="4"> 4 &nbsp &nbsp
+        <input type="radio" name="certification" value="5"> 5 &nbsp &nbsp <br> <br>
+
+         2)  Number of projects worked: <br>
+        <input type="radio" name="no_of_proj" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="no_of_proj" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="no_of_proj" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="no_of_proj" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="no_of_proj" value="5"> 5  &nbsp &nbsp <br> <br>
+
+         3) Client appreciations: <br>
+        <input type="radio" name="client_apprc" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="client_apprc" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="client_apprc" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="client_apprc" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="client_apprc" value="5"> 5  &nbsp &nbsp<br> <br>
+
+         4) Domain experience: <br>
+        <input type="radio" name="dom_exp" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="dom_exp" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="dom_exp" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="dom_exp" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="dom_exp" value="5"> 5  &nbsp &nbsp<br> <br>
+
+         5) 360 degree feedback: <br>
+        <input type="radio" name="360_fdbk" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="360_fdbk" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="360_fdbk" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="360_fdbk" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="360_fdbk" value="5"> 5  &nbsp &nbsp<br> <br>
+
+        6) Self Evaluation: <br>
+        <input type="radio" name="self_eval" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="self_eval" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="self_eval" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="self_eval" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="self_eval" value="5"> 5  &nbsp &nbsp<br> <br>
+
+        7) Punctuality: <br>
+        <input type="radio" name="punctuality" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="punctuality" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="punctuality" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="punctuality" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="punctuality" value="5"> 5  &nbsp &nbsp<br> <br>
+
+        8) Timely submission of projects: <br>
+        <input type="radio" name="submit_proj" value="1"> 1  &nbsp &nbsp
+        <input type="radio" name="submit_proj" value="2"> 2  &nbsp &nbsp
+        <input type="radio" name="submit_proj" value="3"> 3  &nbsp &nbsp
+        <input type="radio" name="submit_proj" value="4"> 4  &nbsp &nbsp
+        <input type="radio" name="submit_proj" value="5"> 5  &nbsp &nbsp<br> <br>
+
+        Comments:<br>
+        <textarea rows="5" cols="30"/></textarea> <br>
+
+        <input type="submit" value="Submit the survey"/>
+        <button onclick="document.getElementById('form-id').submit();">submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<div class="container bootstrap snippet">
+  <div class="row login-page">
+    <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+      <img src="https://dudodiprj2sv7.cloudfront.net/product-logos/4R/UK/UZ6B2S0GRAP6-180x180.PNG" alt="" class="user-avatar">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <br>
+
+      <form role="form" data-toggle="validator">
+        <div class="form-group">
+          <input type="text" class="form-control input-underline input-lg" id="inputUserId" placeholder="Enter User ID" pattern="[^0-9]"
+            maxlength="6" name="userid" [(ngModel)]="login.username" title="Six or more characters">
+        </div>
+        <div class="form-group">
+          <input data-error="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" class="form-control input-underline input-lg"
+            placeholder="Enter Password" name="password" [(ngModel)]="login.password" title="The password must contain atleast one number, one capital letter and one special character"><br>
+          <!--<div class="help-block with-errors">Minimum of 6 characters</div>!-->
+        </div>
+
+      <!-- <input type="button" class="btn btn-info btn-lg" value="retreive response" (click)="retrieveResponses()" /> -->
+        <input type="button" class="btn btn-info btn-lg" value="Log in" (click)="loginSubmit()" />
+       <!-- <div *ngFor="let loginvar of data">
+          <div class="row" style="padding:2px;">
+            <div class="col-sm-1">{{loginvar.username}}</div>
+            <div class="col-sm-2">{{loginvar.password}}</div>
+          </div>
+        </div> -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <app-chart> </app-chart> -->
